@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>About Us</title>
+    <link rel="stylesheet", href="index.css">
+    <link rel="stylesheet", href="aboutus.css">
+    <script src="index.js"></script>
+
+</head>
+<body>
+    
+    <div id="header">
+        <spam id="img">
+            <img src="logo.webp" height="100px" >
+        </spam>
+        <spam id="line"></spam>
+        <spam id="name">
+            <div id="insaid"><b>INSAID</b></div>
+            <div id="solution">SOLUTION</div>
+        </spam>
+        <input type="checkbox", id="check">
+        <label for="check" id="checkbtn">
+            &#9776;
+        </label>
+        <spam id="menu">
+            <ul>
+                <li id="home"><a href="index.html">HOME</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">SOLUTION</a></li>
+                <li><a href="#">TECHNOLOGIES</a></li>
+                <li><a href="#">CLIENTS</a></li>
+                <li><a href="about-us.html">ABOUT US</a></li>
+            </ul>
+        </spam>
+    </div>
+</div>
+<hr style="border-color: rgb(139, 133, 160);">
+<div>
+
+    <!-- <ul>
+        <li>
+            BUSINESS ENQUIRY FORM
+        </li>
+        <li>
+            <label for="name">Name</label>
+            <br>
+            <input type="text" id="name" required>
+            <br>
+        </li>
+    </ul> -->
+    <h2>BUSINESS ENQUIRY FORM</h2>
+    <div id="form">
+        
+        <form id="my-form">
+            <!-- <label for="name">Name</label>
+            <br>
+            <input type="text" id="name" required>
+            <br> -->
+            <label class="labels" for="Name">Full Name</label>
+            <br>
+            <input class="ip" type="text" id="Name" required name="Name">
+            <br>
+            <label class="labels" for="email">Email</label>
+            <br>
+            <input class="ip" type="text" id="email" name="Email" required>
+            <br>
+            <label class="labels">Gender</label>
+            <br>
+            <label class="labels" for="gender">Male</label>
+            <input class="ip" type="radio" id="gender" name="gender" value="Male" required>
+            <label class="labels" for="gender">Female</label>
+            <input class="ip" type="radio" id="gender" name="gender" value="Female" required>
+            <label class="labels" for="gender">Other</label>
+            <input class="ip" type="radio" id="gender" name="gender" value="Other" required>
+            <br>
+            <br>
+            <label class="labels" for="Person">Contact Person</label>
+            <br>
+            <select name="cars" id="Person" name="Person" required>
+                <option value="None">Select</option>
+                <option value="Company Employee">Company Employee</option>
+                <option value="Customer">Customer</option>
+                <option value="Employer">Employer</option>
+                <option value="Other">Other</option>
+            </select>
+            <br>
+            <br>
+            <label class="labels" for="age">Age</label>
+            <br>
+            <input class="ip" type="number" id="age" name="Age" required>
+            <br>
+            <label class="labels" for="address">Address</label>
+            <br>
+            <input class="ip" type="text" id="address" name="Address" required>
+            <!-- <input class="ip" type="text" name="Address">
+            <input class="ip" type="text" name="Address"> -->
+            <br>
+            <label class="labels" for="mobile">Mobile</label>
+            <br>
+            <input class="ip" type="text" id="mobile" name="Contact" required>
+            <br>
+            
+            <label class="labels" for="message">Enquiry Details</label>
+            <br>
+            <textarea id="message" rows="5"  name="Enquiry message" required></textarea>
+            
+            <br>
+            <br>
+            <br>
+            
+            <button class="btn1" id="submit">Submit</button>
+            <Button class="btn2" type="reset" >Reset</Button>
+        </form>
+    </div>
+    <div id="invite">
+        Quality is remembered long after price is forgotten
+        <button><b>Learn More</b></button>
+    </div>
+
+    <div id="footer">
+        
+    </div>
+
+    <script>
+        document.getElementById("submit").addEventListener("click", display());
+        function display(){
+            alert("Successfully Submitted your Enquiry!!")
+        }
+        // const form = document.querySelector('form');
+
+        // form.addEventListener('submit', (e) => {
+        //     e.preventDefault();
+
+        //     const formData = new FormData(form);
+
+        //     for (item of formData) {
+        //         console.log(item[0], item[1])
+        //     };
+        // })
+        // let submit = () => {
+        //     let values = "";
+        //     values += "Name = " + document.getElementsByName("Name")[0].value + "\n";
+        //     values += "Email = " + document.getElementsByName("Email")[0].value + "\n";
+        //     values += "Gender = " + document.getElementsByName("gender")[0].value + "\n";
+        //     values += "Person = " + document.getElementsByName("Person")[0].value + "\n";
+        //     values += "Address = " + document.getElementsByName("Address")[0].value + "\n";
+        //     values += "Contact = " + document.getElementsByName("Contact")[0].value + "\n";
+        //     values += "Enquiry message = " + document.getElementsByName("Enquiry message")[0].value + "\n";
+        //     console.log(values)
+        // };
+    </script>
+
+</body>
+</html>
